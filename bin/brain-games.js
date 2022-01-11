@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 import { greetings } from '../src/cli.js';
+import { playBrainEven } from './brain-even.js';
 
-greetings();
+const name = greetings();
+console.log(playBrainEven() ? `Congratulations, ${name}!` : `Let's try again, ${name}!`);
