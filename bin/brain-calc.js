@@ -1,15 +1,16 @@
 #!/usr/bin/env node
-import {getRandomNumber} from "../src/utils/numbers.js";
-import {CreateGame} from "./game.js";
+import { getRandomNumber } from '../src/utils/numbers.js';
+import { CreateGame } from './game.js';
 
 class BrainCalc {
-  operators = ['-', '+', '*'];
+  constructor() {
+    this.operators = ['-', '+', '*'];
+    this.firstNumber = 0;
+    this.secondNumber = 0;
+    this.operator = '-';
+  }
 
-  firstNumber = 0;
-  secondNumber = 0;
-  operator = '-';
-
-  prepareNumbers = () => {
+  prepareNumbers() {
     this.firstNumber = getRandomNumber(100);
     this.secondNumber = getRandomNumber(100);
     this.operator = this.operators[getRandomNumber(3)];
@@ -19,12 +20,12 @@ class BrainCalc {
     return `${this.firstNumber} ${this.operator} ${this.secondNumber}`;
   }
 
-  getQuestion = () => {
+  getQuestion() {
     this.prepareNumbers();
-    return this.expression
+    return this.expression;
   }
 
-  getAnswer = () => {
+  getAnswer() {
     return eval(this.expression);
   }
 }

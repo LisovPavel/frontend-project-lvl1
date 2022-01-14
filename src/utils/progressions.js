@@ -10,7 +10,7 @@ export const sumProgression = (numbers = PROGRESSION_NUMBERS_DEFAULT) => {
   const increment = getRandomNumber(20);
   const firstNumber = getRandomNumber(40);
   const progression = [];
-  for (let i = 0; i < numbers; i++) {
+  for (let i = 0; i < numbers; i += 1) {
     progression.push(firstNumber + i * increment);
   }
   return progression;
@@ -20,12 +20,11 @@ export const mulProgression = (numbers = PROGRESSION_NUMBERS_DEFAULT) => {
   const increment = getRandomNumber(10);
   const firstNumber = getRandomNumber(40);
   const progression = [];
-  for (let i = 0; i < numbers; i++) {
+  for (let i = 0; i < numbers; i += 1) {
     if (!i) {
       return progression.push(firstNumber);
-    } else {
-      progression.push(firstNumber * i * increment);
     }
+    progression.push(firstNumber * i * increment);
   }
   return progression;
 };

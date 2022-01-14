@@ -7,3 +7,5 @@ export const gcd = (a, b) => {
   }
   return gcd(b, a % b);
 };
+
+export const checkEven = (number) => !(number % 2);

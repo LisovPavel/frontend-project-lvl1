@@ -1,22 +1,24 @@
 #!/usr/bin/env node
-import {gcd, getRandomNumber} from "../src/utils/numbers.js";
-import {CreateGame} from "./game.js";
+import { gcd, getRandomNumber } from '../src/utils/numbers.js';
+import { CreateGame } from './game.js';
 
 class BrainGcd {
-  firstNumber = 0;
-  secondNumber = 0;
+  constructor() {
+    this.firstNumber = 0;
+    this.secondNumber = 0;
+  }
 
-  prepareNumbers = () => {
+  prepareNumbers() {
     this.firstNumber = getRandomNumber(100);
     this.secondNumber = getRandomNumber(100);
   }
 
-  getQuestion = () => {
+  getQuestion() {
     this.prepareNumbers();
     return `${this.firstNumber} ${this.secondNumber}`;
   }
 
-  getAnswer = () => {
+  getAnswer() {
     return gcd(this.firstNumber, this.secondNumber);
   }
 }
