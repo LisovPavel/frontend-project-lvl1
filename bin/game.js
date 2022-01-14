@@ -19,7 +19,7 @@ export class CreateGame {
     }
   }
 
-  startGame = rounds => {
+  startGame = (rounds = 3) => {
     let roundsCounter = 0;
     while (roundsCounter < rounds) {
       const isSuccess = this.startRound();
