@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { greetings } from '../src/cli.js';
-import { playBrainEven } from './brain-even.js';
+import { brainEven } from './brain-even.js';
 
 const name = greetings();
-console.log(playBrainEven() ? `Congratulations, ${name}!` : `Let's try again, ${name}!`);
+console.log(brainEven.startGame(3) ? `Congratulations, ${name}!` : `Let's try again, ${name}!`);
