@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {gcd, getRandomNumber} from "../src/utils/numbers.js";
 import {CreateGame} from "./game.js";
 
