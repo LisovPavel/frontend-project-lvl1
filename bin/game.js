@@ -1,14 +1,13 @@
 import {ask, failMessage, listenAnswer, successMessage} from "../src/utils/questions.js";
 
-export class Game {
-  constructor(getQuestion, getAnswer) {
-    this.getQuestion = getQuestion;
-    this.getAnswer = getAnswer;
+export class CreateGame {
+  constructor(Game) {
+    this.game = new Game();
   }
 
   startRound = () => {
-    const question = this.getQuestion();
-    const answer = this.getAnswer();
+    const question = this.game.getQuestion();
+    const answer = this.game.getAnswer();
     ask(question);
     const userAnswer = listenAnswer();
     if (userAnswer == answer) {

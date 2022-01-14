@@ -1,7 +1,7 @@
 import {getRandomNumber} from "../src/utils/numbers.js";
-import {Game} from "./game.js";
+import {CreateGame} from "./game.js";
 
-class BrainCalcQuestions {
+class BrainCalc {
   operators = ['-', '+', '*'];
 
   firstNumber = 0;
@@ -28,5 +28,4 @@ class BrainCalcQuestions {
   }
 }
 
-const brainCalcQuestions = new BrainCalcQuestions();
-export const brainCalc = new Game(brainCalcQuestions.getQuestion, brainCalcQuestions.getAnswer);
+export const brainCalc = new CreateGame(BrainCalc);
