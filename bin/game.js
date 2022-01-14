@@ -11,7 +11,7 @@ export class Game {
     const answer = this.getAnswer();
     ask(question);
     const userAnswer = listenAnswer();
-    if (userAnswer === answer) {
+    if (userAnswer == answer) {
       successMessage();
       return true;
     } else {
