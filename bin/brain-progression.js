@@ -29,6 +29,11 @@ class BrainProgression {
   getAnswer() {
     return this.progression[this.hiddenProgressionNumberIndex];
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  showRules() {
+    console.log('What number is missing in the progression?');
+  }
 }
 
 export const brainProgression = new CreateGame(BrainProgression);

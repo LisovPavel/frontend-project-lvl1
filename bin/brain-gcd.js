@@ -21,6 +21,11 @@ class BrainGcd {
   getAnswer() {
     return gcd(this.firstNumber, this.secondNumber);
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  showRules() {
+    console.log('Find the greatest common divisor of given numbers.');
+  }
 }
 
 export const brainGcd = new CreateGame(BrainGcd);

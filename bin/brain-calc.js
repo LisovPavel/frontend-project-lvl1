@@ -28,6 +28,11 @@ class BrainCalc {
   getAnswer() {
     return eval(this.expression);
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  showRules() {
+    console.log('What is the result of the expression?');
+  }
 }
 
 export const brainCalc = new CreateGame(BrainCalc);

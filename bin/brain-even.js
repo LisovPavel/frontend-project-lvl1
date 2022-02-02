@@ -16,6 +16,11 @@ class BrainEven {
   getAnswer() {
     return checkEven(this.number) ? 'yes' : 'no';
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  showRules() {
+    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  }
 }
 
 export const brainEven = new CreateGame(BrainEven);
