@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import { CreateGame } from './game.js';
-import { getRandomNumber } from '../src/utils/numbers.js';
-import { fibSumProgression, mulProgression, sumProgression } from '../src/utils/progressions.js';
+import { CreateGame } from '../../bin/game.js';
+import { getRandomNumber } from '../utils/numbers.js';
+import { fibSumProgression, mulProgression, sumProgression } from '../utils/progressions.js';
 
 class BrainProgression {
   constructor() {

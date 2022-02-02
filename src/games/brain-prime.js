@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { checkPrime, getRandomNumber } from '../src/utils/numbers.js';
-import { CreateGame } from './game.js';
+import { checkPrime, getRandomNumber } from '../utils/numbers.js';
+import { CreateGame } from '../../bin/game.js';
 
 class BrainPrime {
   constructor() {

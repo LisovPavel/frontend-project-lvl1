@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getRandomNumber } from '../src/utils/numbers.js';
-import { CreateGame } from './game.js';
+import { getRandomNumber } from '../utils/numbers.js';
+import { CreateGame } from '../../bin/game.js';
 
 class BrainCalc {
   constructor() {

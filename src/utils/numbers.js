@@ -12,7 +12,7 @@ export const checkEven = (number) => !(number % 2);
 
 export const checkPrime = (number) => {
   let i = 2;
-  while (i < number/2) {
+  while (i < number / 2) {
     if (number % i === 0) {
       return false;
     }

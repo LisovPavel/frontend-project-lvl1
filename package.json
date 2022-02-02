@@ -9,10 +9,10 @@
   },
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js",
-    "brain-calc": "bin/brain-calc.js"
+    "brain-even": "src/games/brain-even.js",
+    "brain-gcd": "src/games/brain-gcd.js",
+    "brain-progression": "src/games/brain-progression.js",
+    "brain-calc": "src/games/brain-calc.js"
   },
   "repository": {
     "type": "git",

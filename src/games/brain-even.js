@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { CreateGame } from './game.js';
-import { checkEven, getRandomNumber } from '../src/utils/numbers.js';
+import { CreateGame } from '../../bin/game.js';
+import { checkEven, getRandomNumber } from '../utils/numbers.js';
 
 class BrainEven {
   constructor() {
