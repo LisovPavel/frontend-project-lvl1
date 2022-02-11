@@ -21,7 +21,7 @@ export class CreateGame {
     return false;
   }
 
-  startGame(rounds = 3) {
+  startGame(rounds = 1) {
     this.game.showRules();
     let roundsCounter = 0;
     while (roundsCounter < rounds) {
